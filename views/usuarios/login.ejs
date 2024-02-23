@@ -1,0 +1,21 @@
+<%- include("../templates/encabezado")%>
+<%- include("../templates/menu")%>
+<div class="container mt-5">
+    <form action="/login" method="post" >
+        <div class="card">
+            <div class="card-header">
+                <h1>Login</h1>
+            </div>
+            <div class="card-body">
+                <input class="form-control mb-3" type="text" name="usuario" id="usuario" placeholder="Usuario">
+                <input class="form-control mb-3" type="text" name="password" id="password" placeholder="Password">
+            </div>
+            <div class="card-footer">
+                <button class="form-control btn btn-primary" type="submit">Login</button>
+                <center><a href="/nuevousuario">Registrarse</a></center>
+            </div>
+        </div>
+    </form>
+</div>
+<%- include("../templates/pie")%>
+
